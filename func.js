@@ -16,5 +16,13 @@ const cliente = {
             parentesco: 'Yes',
             data: '14/03/2022'
         }
-    ] // Umindice de um Array.
+    ],
+    saldo: 1500,
+    depositar: function(valor)
+    {
+        this.saldo += valor;
+    }
 }
+console.log(cliente.saldo)
+cliente.depositar(5);
+console.log(cliente.saldo)
