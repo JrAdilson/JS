@@ -29,4 +29,5 @@ function offerSecure(obj){
         console.log(`Oferta de Seguro para: ${obj.nome}`);        
     } 
 }
+console.log(Object.values(cliente))
 offerSecure(cliente)
