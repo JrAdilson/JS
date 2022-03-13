@@ -23,5 +23,10 @@ const cliente = {
     }
 }
 
-const secure = Object.keys(cliente); // Esse método retorna cada chave do objeto.
-console.log(secure);
+function offerSecure(obj){
+    const secure = Object.keys(obj); // Esse método retorna cada chave do objeto.
+    if(secure.includes("dependentes")){ // Include - método do array que verifica se inclui determinado dado.
+        console.log(`Oferta de Seguro para: ${obj.nome}`);        
+    } 
+}
+offerSecure(cliente)
