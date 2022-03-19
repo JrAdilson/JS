@@ -24,9 +24,9 @@ const clientes = [
         nome: 'Alaska',
         idade: 'No Idea',
         dependentes:[{
-            nome: "",
-            idade: "",
-            parentesco: ""
+            nome: "A",
+            idade: "B",
+            parentesco: "C"
         }]
     },
     {
@@ -42,5 +42,5 @@ const clientes = [
 //const list = [...clientes[0].dependentes,...clientes[1].dependentes]
 for(let i = 0; i < clientes.length; i++){
     const list = [...clientes[i].dependentes]
-    console.log(list);
+    console.table(list);
 }
