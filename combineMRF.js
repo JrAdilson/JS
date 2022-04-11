@@ -16,7 +16,7 @@ let combine = animais.filter((animal) => {
 let combi = animais.filter((animal) => {
     return animal.tipo === 'gato'
 }).map(idd => {
-    if(idd.idade >= 2){
+    if(idd.idade > 2){
        return ((idd.idade-2)*4)+25
     }else if(idd.idade == 1){
         return idd.idade = 15
